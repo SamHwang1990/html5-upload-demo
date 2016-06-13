@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Upload Demo</title>
+    <link rel="stylesheet" type="text/css" href="../node_modules/normalize.css/normalize.css">
+    <style type="text/css">
+        #fileTrigger {
+            display: inline-block;
+            padding: 5px;
+            font-size: 14px;
+            color: #555;
+            text-decoration: none;
+            line-height: 1.5;
+            background-color: aqua;
+            border: 1px solid #c0c0c0;
+            border-radius: 4px;
+        }
+
+        #fileDropArea {
+            box-sizing: border-box;
+            margin: 20px 0;
+            height: 200px;
+            width: 200px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 200px;
+            border: 3px dashed #000;
+        }
+    </style>
+</head>
+<body>
+
+<form enctype="multipart/form-data" id="form">
+    <input type="file" style="display:none;" id="fileInput" multiple="multiple">
+    <a href="javascript:void(0);" id="fileTrigger" >选择文件</a>
+</form>
+
+<div id="fileDropArea">文件请拖放到这里</div>
+
+<div id="fileStatus">
+    <p>
+        selected files：<span id="fileNum">0</span>;<br/>
+        total size：<span id="fileSize">0</span>;<br/>
+        desc:<br/><span id="filesDesc"></span>
+    </p>
+</div>
+<div id="previewArea">
+
+</div>
+
+<script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

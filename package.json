@@ -1,0 +1,8 @@
+{
+  "name": "HTML5 Upload Demo",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "normalize.css": "^4.1.1"
+  }
+}
